@@ -1,27 +1,17 @@
 @media (max-width: 768px) {
-  #intro,
-  #mispelis,
-  #misseries {
-    width: 90% !important;
-  }
-
-  .servicio-fila {
-    width: 100% !important;
-    text-align: center;
-  }
-
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-  #menu {
-    .navbar-collapse {
-      transition: max-height 0.3s ease-in-out;
-
-      &.collapsed {
-        max-height: auto;
-      }
+    #intro,
+    #mispelis,
+    #misseries {
+      width: 90% !important;
+    }
+  
+    .servicio-fila {
+      width: 100% !important;
+      text-align: center;
+    }
+  
+    .icono-wrap {
+      flex-wrap: wrap;
+      justify-content: center !important;
     }
   }
-}
