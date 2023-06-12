@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background-color: #6d6969;
+  font-family: 'Barlow', sans-serif;
+  overflow-x: hidden; }
+
+#logoweb {
+  font-family: 'Barrio', cursive;
+  font-size: 30px;
+  justify-content: center;
+  animation-name: spin;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+
+#menu a {
+  font-family: 'Barriecito', cursive;
+  font-size: 18px;
+  color: red; }
+
+#menu button {
+  font-family: 'Barriecito', cursive;
+  font-size: 18px;
+  color: red; }
+
+#footer {
+  background-color: #f8f8f8;
+  padding: 20px 0;
+  text-align: center; }
+
+#container {
+  max-width: 960px;
+  margin: 0 auto; }
+  #container #p {
+    margin: 0;
+    font-size: 14px;
+    color: #555; }
+
+.header {
+  text-align: left;
+  padding: 20px; }
+  .header h1,
+  .header p {
+    margin: 0; }
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center; }
+  .form input[type="text"],
+  .form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px; }
+  .form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer; }
+    .form input[type="submit"]:hover {
+      background-color: #45a049; }
+  .form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left; }
+
+.carousel-inner {
+  max-height: 34rem; }
+
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-rows: 3fr 7fr 1fr;
+  gap: 2px 2px; }
+  .container p {
+    list-style: none;
+    word-spacing: 20%; }
+
+.top5 {
+  grid-area: 2/1/4/2;
+  text-align: left; }
+
+.end {
+  grid-area: 3/1/4/4;
+  text-align: end; }
+
+.puestos {
+  grid-area: 2/2/3/4;
+  text-align: left; }
+
+.begin {
+  grid-area: 1/1/2/4;
+  text-align: end; }
+
+@media (max-width: 768px) {
+  #intro,
+  #mispelis,
+  #misseries {
+    width: 90% !important; }
+  .servicio-fila {
+    width: 100% !important;
+    text-align: center; }
+  .icono-wrap {
+    flex-wrap: wrap;
+    justify-content: center !important; } }
