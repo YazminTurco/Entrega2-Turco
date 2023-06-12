@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -11,27 +12,21 @@ body {
 #logoweb {
   font-family: 'Barrio', cursive;
   font-size: 30px;
-  justify-content: center;
-  animation-name: spin;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear; }
+  justify-content: center; }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
-
-#menu a {
-  font-family: 'Barriecito', cursive;
-  font-size: 18px;
-  color: red; }
-
+#menu a,
 #menu button {
   font-family: 'Barriecito', cursive;
   font-size: 18px;
   color: red; }
+
+#menu .navbar-collapse {
+  transition: max-height 0.3s ease-in-out;
+  max-height: 0;
+  overflow: hidden; }
+  #menu .navbar-collapse.collapsed {
+    max-height: 500px;
+    /* Ajusta esta altura según tus necesidades */ }
 
 #footer {
   background-color: #f8f8f8;
@@ -41,17 +36,19 @@ body {
 #container {
   max-width: 960px;
   margin: 0 auto; }
-  #container #p {
-    margin: 0;
-    font-size: 14px;
-    color: #555; }
+
+#container #p {
+  margin: 0;
+  font-size: 14px;
+  color: #555; }
 
 .header {
   text-align: left;
   padding: 20px; }
-  .header h1,
-  .header p {
-    margin: 0; }
+
+.header h1,
+.header p {
+  margin: 0; }
 
 .form {
   max-width: 400px;
@@ -65,13 +62,13 @@ body {
     padding: 10px;
     margin-bottom: 10px; }
   .form input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #4caf50;
     color: #fff;
     padding: 10px 20px;
     border: none;
     cursor: pointer; }
-    .form input[type="submit"]:hover {
-      background-color: #45a049; }
+  .form input[type="submit"]:hover {
+    background-color: #45a049; }
   .form label {
     display: block;
     margin-bottom: 5px;
@@ -88,31 +85,15 @@ body {
   .container p {
     list-style: none;
     word-spacing: 20%; }
-
-.top5 {
-  grid-area: 2/1/4/2;
-  text-align: left; }
-
-.end {
-  grid-area: 3/1/4/4;
-  text-align: end; }
-
-.puestos {
-  grid-area: 2/2/3/4;
-  text-align: left; }
-
-.begin {
-  grid-area: 1/1/2/4;
-  text-align: end; }
-
-@media (max-width: 768px) {
-  #intro,
-  #mispelis,
-  #misseries {
-    width: 90% !important; }
-  .servicio-fila {
-    width: 100% !important;
-    text-align: center; }
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important; } }
+  .container .top5 {
+    grid-area: 2/1/4/2;
+    text-align: left; }
+  .container .end {
+    grid-area: 3/1/4/4;
+    text-align: end; }
+  .container .puestos {
+    grid-area: 2/2/3/4;
+    text-align: left; }
+  .container .begin {
+    grid-area: 1/1/2/4;
+    text-align: end; }

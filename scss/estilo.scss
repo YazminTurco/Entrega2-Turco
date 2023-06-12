@@ -25,11 +25,12 @@ body {
   }
 
   .navbar-collapse {
-    transition: height 0.3s ease-in-out;
+    transition: max-height 0.3s ease-in-out;
+    max-height: 0;
     overflow: hidden;
 
     &.collapsed {
-      height: 0;
+      max-height: 500px; /* Ajusta esta altura según tus necesidades */
     }
   }
 }
@@ -127,33 +128,5 @@ body {
   .begin {
     grid-area: 1/1/2/4;
     text-align: end;
-  }
-}
-
-@media (max-width: 768px) {
-  #intro,
-  #mispelis,
-  #misseries {
-    width: 90% !important;
-  }
-
-  .servicio-fila {
-    width: 100% !important;
-    text-align: center;
-  }
-
-  .icono-wrap {
-    flex-wrap: wrap;
-    justify-content: center !important;
-  }
-
-  #menu {
-    .navbar-collapse {
-      transition: height 0.3s ease-in-out;
-
-      &.collapsed {
-        height: auto;
-      }
-    }
   }
 }
