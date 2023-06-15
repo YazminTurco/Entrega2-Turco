@@ -19,19 +19,32 @@ body {
 
 @keyframes spin {
   0% {
-    transform: rotate(0deg); }
+    transition: transform 0.3s ease; }
   100% {
-    transform: rotate(360deg); } }
+    transform: scale(3.1); } }
 
 #menu a {
   font-family: 'Barriecito', cursive;
   font-size: 18px;
-  color: red; }
+  color: red;
+  transition: color 0.3s ease; }
+  #menu a:hover {
+    color: blue; }
 
 #menu button {
   font-family: 'Barriecito', cursive;
   font-size: 18px;
-  color: red; }
+  color: red;
+  transition: color 0.3s ease; }
+  #menu button:hover {
+    color: #070606; }
+
+#menu a.nav-link-transition,
+#menu button.btn-transition {
+  transition: transform 0.3s ease; }
+  #menu a.nav-link-transition:hover,
+  #menu button.btn-transition:hover {
+    transform: scale(1.1); }
 
 #footer {
   background-color: #f8f8f8;
