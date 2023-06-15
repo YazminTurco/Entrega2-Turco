@@ -44,7 +44,7 @@ body {
   transition: transform 0.3s ease; }
   #menu a.nav-link-transition:hover,
   #menu button.btn-transition:hover {
-    transform: scale(1.1); }
+    transform: scale(1.4); }
 
 #footer {
   background-color: #f8f8f8;
